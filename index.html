@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Fundo de Morceguinhos 🦇</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background-color: #6a0dad; /* roxo escuro */
+    background-image: 
+      radial-gradient(circle, transparent 20%, #6a0dad 21%), 
+      radial-gradient(circle, transparent 20%, #6a0dad 21%);
+    background-position: 0 0, 30px 30px;
+    background-size: 60px 60px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #f0e6ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  /* Container para morceguinhos */
+  .bats {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* para não atrapalhar cliques */
+    overflow: hidden;
+  }
+  .bat {
+    position: absolute;
+    font-size: 30px;
+    animation: fly 8s linear infinite;
+    user-select: none;
+  }
+
+  @keyframes fly {
+    0% {
+      transform: translateX(100vw) translateY(0) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100vw) translateY(20vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+</style>
+</head>
+<body>
+  <h1>Oi, minha morceguinha 💜</h1>
+  <p>Quero te beijar até nossos lábios caírem</p>
+
+  <div class="bats">
+    <div class="bat" style="top: 10%; left: 110%; animation-delay: 0s;">🦇</div>
+    <div class="bat" style="top: 30%; left: 120%; animation-delay: 2s;">🦇</div>
+    <div class="bat" style="top: 50%; left: 115%; animation-delay: 4s;">🦇</div>
+    <div class="bat" style="top: 70%; left: 130%; animation-delay: 6s;">🦇</div>
+    <div class="bat" style="top: 85%; left: 125%; animation-delay: 8s;">🦇</div>
+  </div>
+</body>
+</html>
+
